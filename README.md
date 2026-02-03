@@ -1,62 +1,94 @@
-# 🚀 OAuth Data Ingestion & Orchestration Demo
+🚀 OAuth Data Ingestion & Orchestration Demo
 
-## 📖 Overview
-This project demonstrates a robust, mock data ingestion pipeline designed for high scalability and secure operations. It simulates the extraction of advertising data (e.g., Google Ads, Facebook Ads) using **OAuth 2.0** authentication, processes it, and stores it in a simulated data lake (S3).
+📖 Overview
+This repository contains a sanitized, runnable demo that showcases an OAuth 2.0–based
+data ingestion and orchestration pipeline.
 
-The purpose is to showcase **Software Architecture**, **OAuth Token Management**, and **Orchestration Logic** without dealing with real credentials or external API costs.
+It simulates the extraction of advertising data (e.g., Google Ads, Facebook Ads),
+processes it through a backend orchestration layer, and stores the output in a
+locally simulated data lake (mock S3).
 
-## 🏗 Architecture
-1. **FastAPI Backend (`app/`)**: The core orchestration engine exposing REST endpoints.
-2. **Mock OAuth Provider (`mock_oauth_provider.py`)**: Simulates the full OAuth lifecycle (Auth Code Grant, Token Expiry, Refresh Tokens).
-3. **Ingestion Engine (`ingestion.py`)**: Fetches data using valid tokens, handling simulated network jitter and API failures.
-4. **Data Lake Storage (`storage.py`)**: storing JSON files locally with timestamp-based partitioning (mock S3 behavior).
-5. **Streamlit Dashboard (`dashboard/`)**: A user-friendly interface to trigger pipelines and visualize business metrics.
+The goal is to demonstrate system architecture, OAuth token lifecycle management,
+and orchestration patterns — without using real credentials or external APIs.
 
-## 📦 Key Components
+---
 
-| Component | File | Description |
-|-----------|------|-------------|
-| **Entry Point** | `app/main.py` | FastAPI app with `/ingest` and `/health` routes. |
-| **Auth** | `app/oauth.py` | Manages token retrieval and auto-refresh logic. |
-| **Mock Provider** | `app/mock_oauth_provider.py` | Generates fake Access & Refresh tokens. |
-| **Storage** | `app/storage.py` | Handles filesystem reads/writes (Mock S3). |
-| **Pipeline** | `app/ingestion.py` | Connects Auth + API Fetch + Storage. |
+🏗 Architecture
 
-## 🔐 Simulated OAuth Flow
-1. **Check Token**: System checks in-memory store for a valid Access Token.
-2. **Auth Code Flow**: If no token exists, it exchanges a "Code" for an Access/Refresh pair.
-3. **Auto-Refresh**: If the Access Token is expired (simulated), it uses the Refresh Token to rotate credentials seamlessy before the API call.
+• FastAPI Backend (app/)
+  Acts as the orchestration layer and exposes REST endpoints to trigger ingestion
+  and retrieve processed data.
 
-## 🚀 Getting Started
+• Mock OAuth Provider (mock_oauth_provider.py)
+  Simulates the OAuth 2.0 Authorization Code flow, token expiration, and refresh logic.
 
-### 1. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+• Ingestion Engine (ingestion.py)
+  Uses valid tokens to fetch mock data, simulating network latency and API failures.
 
-### 2. Run the Backend API
-Start the orchestration server:
-```bash
-uvicorn app.main:app --reload
-```
-*API will be available at [http://localhost:8000](http://localhost:8000)*
+• Data Lake Storage (storage.py)
+  Persists JSON files locally using timestamp-based partitioning to mimic S3 behavior.
 
-### 3. Run the Dashboard
-In a new terminal, launch the UI:
-```bash
-streamlit run dashboard/dashboard_app.py
-```
+• Streamlit Dashboard (dashboard/)
+  Provides a lightweight control plane to trigger ingestion jobs and visualize outputs.
 
-## 🧪 Testing the Flow
-1. Open the Dashboard.
-2. **Verify Project ID**: Ensure the default `demo_project` is selected or enter a custom one.
-3. Click **🚀 Run Ingestion Job** to trigger a mock ingestion workflow.
-4. Watch as the system authenticates, fetches mock data, and saves it.
-5. Review the generated charts and tables.
+---
 
-## ⚠️ Disclaimer
-**This is a SANITIZED DEMO.**
-- No real real-world credentials are used.
-- "Storage" is local execution.
-- "OAuth" is logical simulation only.
-- Designed for architectural review.
+📦 Key Components
+
+Component        File                     Description
+---------------------------------------------------------------
+Entry Point      app/main.py              FastAPI app with /ingest and /health routes
+Auth             app/oauth.py             Token retrieval and auto-refresh logic
+Mock Provider    app/mock_oauth_provider.py Generates fake access & refresh tokens
+Storage          app/storage.py           Local filesystem read/write (mock S3)
+Pipeline         app/ingestion.py         Connects Auth → Fetch → Storage
+
+---
+
+🔐 Simulated OAuth Flow
+
+1. Token Check
+   The system checks an in-memory store for a valid access token.
+
+2. Authorization Code Flow
+   If no valid token exists, a mock authorization code is exchanged for
+   access and refresh tokens.
+
+3. Auto-Refresh
+   When the access token expires (simulated), the refresh token is used to
+   rotate credentials before making the ingestion call.
+
+---
+
+🚀 Getting Started
+
+1. Install Dependencies
+   pip install -r requirements.txt
+
+2. Run the Backend API
+   uvicorn app.main:app --reload
+   API available at: http://localhost:8000
+
+3. Run the Dashboard
+   streamlit run dashboard/dashboard_app.py
+
+---
+
+🧪 Testing the Flow
+
+1. Open the Streamlit dashboard.
+2. Verify the default project_id (demo_project) or enter a custom one.
+3. Click “Run Ingestion Job” to trigger the pipeline.
+4. The backend simulates OAuth authentication, ingests mock data, and persists it.
+5. The dashboard refreshes to display aggregated metrics and processed records.
+
+---
+
+⚠️ Disclaimer
+
+This is a SANITIZED DEMO.
+
+• No real credentials or third-party APIs are used.
+• Storage is local and simulates S3 behavior.
+• OAuth is a logical simulation for architectural demonstration only.
+• This project is intended for system design and orchestration review.
