@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "source": "MockAdsAPI",
+    "project_id": "demo_project",
+    "job_status": "success"
+  },
+  "record_count": 20,
+  "data": [
+    {
+      "id": "ad_63304",
+      "campaign_name": "Brand Awareness",
+      "impressions": 7018,
+      "clicks": 228,
+      "spend": 192.41,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_55529",
+      "campaign_name": "Summer Promo",
+      "impressions": 6939,
+      "clicks": 433,
+      "spend": 120.62,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_14540",
+      "campaign_name": "Summer Promo",
+      "impressions": 505,
+      "clicks": 403,
+      "spend": 80.64,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_95034",
+      "campaign_name": "Summer Promo",
+      "impressions": 6207,
+      "clicks": 260,
+      "spend": 212.08,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_75126",
+      "campaign_name": "Brand Awareness",
+      "impressions": 6605,
+      "clicks": 327,
+      "spend": 264.59,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_39516",
+      "campaign_name": "Summer Promo",
+      "impressions": 8890,
+      "clicks": 284,
+      "spend": 284.35,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_71432",
+      "campaign_name": "Brand Awareness",
+      "impressions": 1701,
+      "clicks": 197,
+      "spend": 175.1,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_61848",
+      "campaign_name": "Summer Promo",
+      "impressions": 2833,
+      "clicks": 27,
+      "spend": 242.15,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_35194",
+      "campaign_name": "Summer Promo",
+      "impressions": 4290,
+      "clicks": 305,
+      "spend": 55.23,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_50717",
+      "campaign_name": "Winter clearance",
+      "impressions": 5002,
+      "clicks": 197,
+      "spend": 15.99,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_26437",
+      "campaign_name": "Retargeting Q3",
+      "impressions": 4985,
+      "clicks": 28,
+      "spend": 282.75,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_30774",
+      "campaign_name": "Brand Awareness",
+      "impressions": 1180,
+      "clicks": 235,
+      "spend": 65.7,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_56385",
+      "campaign_name": "Brand Awareness",
+      "impressions": 1117,
+      "clicks": 368,
+      "spend": 192.63,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_71503",
+      "campaign_name": "Competitor Conquest",
+      "impressions": 6488,
+      "clicks": 415,
+      "spend": 216.32,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_80514",
+      "campaign_name": "Brand Awareness",
+      "impressions": 6191,
+      "clicks": 436,
+      "spend": 233.49,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_71463",
+      "campaign_name": "Competitor Conquest",
+      "impressions": 8170,
+      "clicks": 158,
+      "spend": 147.88,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_45025",
+      "campaign_name": "Summer Promo",
+      "impressions": 6380,
+      "clicks": 236,
+      "spend": 158.16,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_15857",
+      "campaign_name": "Brand Awareness",
+      "impressions": 2387,
+      "clicks": 350,
+      "spend": 238.98,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_88854",
+      "campaign_name": "Winter clearance",
+      "impressions": 6892,
+      "clicks": 114,
+      "spend": 66.92,
+      "date": "2023-11-01"
+    },
+    {
+      "id": "ad_82962",
+      "campaign_name": "Competitor Conquest",
+      "impressions": 7928,
+      "clicks": 82,
+      "spend": 183.52,
+      "date": "2023-11-01"
+    }
+  ],
+  "ingested_at_iso": "2026-02-03T08:10:59.270307"
+}
