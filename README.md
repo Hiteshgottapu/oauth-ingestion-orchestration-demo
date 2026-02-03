@@ -1,4 +1,4 @@
-🚀 OAuth Data Ingestion & Orchestration Demo
+# 🚀 OAuth Data Ingestion & Orchestration Demo
 
 📖 Overview
 This repository contains a sanitized, runnable demo that showcases an OAuth 2.0–based
@@ -92,3 +92,7 @@ This is a SANITIZED DEMO.
 • Storage is local and simulates S3 behavior.
 • OAuth is a logical simulation for architectural demonstration only.
 • This project is intended for system design and orchestration review.
+
+📐 Architecture Diagram & System Design: https://www.notion.so/FluxAI-System-Architecture-My-Contributions-2f9cd2cd103c804f9da6f71c339803cc
+
+
