@@ -15,6 +15,8 @@ and orchestration patterns — without using real credentials or external APIs.
 
 🏗 Architecture
 
+https://www.notion.so/FluxAI-System-Architecture-My-Contributions-2f9cd2cd103c804f9da6f71c339803cc
+
 • FastAPI Backend (app/)
   Acts as the orchestration layer and exposes REST endpoints to trigger ingestion
   and retrieve processed data.
@@ -94,5 +96,6 @@ This is a SANITIZED DEMO.
 • This project is intended for system design and orchestration review.
 
 📐 Architecture Diagram & System Design: https://www.notion.so/FluxAI-System-Architecture-My-Contributions-2f9cd2cd103c804f9da6f71c339803cc
+
 
 
